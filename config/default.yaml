@@ -1,0 +1,22 @@
+# ETF Market Making Simulator Configuration
+
+market:
+  initial_price: 100.0
+  volatility: 0.20
+  drift: 0.05
+  time_step: 0.01
+  random_seed: 42
+
+market_maker:
+  spread_bps: 5
+  max_inventory: 1000
+  order_size: 100
+
+risk:
+  max_order_size: 100
+  max_daily_loss: 5000
+  max_inventory: 1000
+
+simulation:
+  steps: 1000
+  speed: "real-time"  # options: fast, real-time, step
